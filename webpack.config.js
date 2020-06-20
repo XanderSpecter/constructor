@@ -39,7 +39,6 @@ module.exports = (env, argv = {}) => {
             new CleanWebpackPlugin(),
             new HtmlWebpackPlugin({
                 files: {
-                    css: ['styles.[hash].css'],
                     js: ['app.[hash].js'],
                 },
                 template: './src/index.html',
