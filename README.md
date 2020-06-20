@@ -8,5 +8,7 @@
 3. Visual Studio IntelliCode
 4. vscode-styled-components
 
-5. `npm ci` - установка актуальных версий npm пакетов-зависимостей на основе данных из package.json
-6. `npm start` - запуск локального dev сервера с поддержкой HMR для разработки на http://localhost:8080/
+Порядок установки и запуска dev сервера проекта:
+
+1. `npm ci` - установка актуальных версий npm пакетов-зависимостей на основе данных из package.json
+2. `npm start` - запуск локального dev сервера с поддержкой HMR для разработки на http://localhost:8080/
