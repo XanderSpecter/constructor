@@ -20,9 +20,7 @@ module.exports = (env, argv = {}) => {
             extensions: ['.ts', '.tsx', '.js'],
         },
         optimization: {
-            minimizer: [
-                new UglifyJsPlugin(),
-            ],
+            minimizer: [new UglifyJsPlugin()],
         },
         module: {
             rules: [
@@ -30,10 +28,10 @@ module.exports = (env, argv = {}) => {
                     test: /\.(ts|js)x?$/,
                     exclude: /node_modules/,
                     use: {
-                        loader: 'babel-loader'
+                        loader: 'babel-loader',
                     },
                 },
-            ]
+            ],
         },
         plugins: [
             new CleanWebpackPlugin(),
@@ -45,7 +43,7 @@ module.exports = (env, argv = {}) => {
                 filename: './index.html',
                 inject: false,
             }),
-        ]
+        ],
     };
 
     return config;

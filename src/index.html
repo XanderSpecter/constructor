@@ -1,12 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="theme-color" content="#ffffff">
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#ffffff" />
         <title>Constructor</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <noscript>Нужно включить JavaScript</noscript>
@@ -14,6 +20,6 @@
         <script type="text/javascript">
             window.bundles = <%= JSON.stringify(htmlWebpackPlugin.files.chunks) %>;
         </script>
-        <script src=".<%= htmlWebpackPlugin.files.chunks.app.entry %>"></script>
+        <script src=".<%= htmlWebpackPlugin.files.js %>"></script>
     </body>
 </html>
